@@ -15,6 +15,11 @@
             var result2 = ProductList.Skip((pageNumber - 1) * pageSize).Take(pageSize);
             #endregion
 
+            #region Q3
+            var result3 = ProductList.OrderByDescending(p => p.UnitPrice)
+                                     .TakeWhile(p => p.UnitPrice < 25);
+            #endregion
+
 
         }
     }
