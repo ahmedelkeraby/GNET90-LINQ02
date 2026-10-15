@@ -25,6 +25,11 @@
                                       .All(p => p.UnitPrice > 0);
             #endregion
 
+            #region Q5
+            int[] ids = { 3, 9, 13, 18 };
+            bool result5 = ids.Contains(9);
+            #endregion
+
 
         }
     }
