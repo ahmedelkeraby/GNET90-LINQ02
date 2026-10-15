@@ -30,7 +30,16 @@
             bool result5 = ids.Contains(9);
             #endregion
 
+            #region Q6
+            var result6 = ProductList.GroupBy(p => p.Category);
+            foreach (var g in result6)
 
-        }
+            {
+                Console.WriteLine($"{g.Key}: {g.Count()} products");
+            }
+            #endregion
+
+
+           
     }
 }
