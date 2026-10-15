@@ -20,6 +20,11 @@
                                      .TakeWhile(p => p.UnitPrice < 25);
             #endregion
 
+            #region Q4
+            bool result4 = ProductList.Where(p => p.Category == "Seafood")
+                                      .All(p => p.UnitPrice > 0);
+            #endregion
+
 
         }
     }
