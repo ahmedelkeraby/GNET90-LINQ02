@@ -68,9 +68,17 @@
                          TotalOrderValue = g.Sum(c => c.Orders.Sum(o => o.Total))
                      };
             #endregion
+
             #region Q10
             var result10 = ProductList.Sum(p => p.UnitsInStock);
             #endregion
+
+            #region Q11
+            var mostExpensive = ProductList.Max(p => p.UnitPrice);
+            var cheapest = ProductList.Min(p => p.UnitPrice);
+            #endregion
+
+
 
 
 
