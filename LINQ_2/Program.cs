@@ -69,7 +69,7 @@
                      };
             #endregion
             #region Q10
-
+            var result10 = ProductList.Sum(p => p.UnitsInStock);
             #endregion
 
 
