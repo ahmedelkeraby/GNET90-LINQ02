@@ -105,6 +105,10 @@
             var result16 = ProductList.First(p => p.UnitPrice > 50);
             #endregion
 
+            #region Q17
+            var result17 = ProductList.FirstOrDefault(p => p.UnitPrice > 500);
+            #endregion
+
 
 
 
