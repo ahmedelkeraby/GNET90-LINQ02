@@ -122,6 +122,11 @@
                                       .Concat(CustomerList.Take(3).Select(c => c.CustomerName));
             #endregion
 
+            #region Q21
+            var result21 = ProductList.Zip(CustomerList,
+                     (p, c) => $"{p.ProductName} sold to {c.CustomerName}");
+            #endregion
+
 
 
 
