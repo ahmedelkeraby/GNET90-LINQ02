@@ -48,6 +48,16 @@
                                     });
             #endregion
 
+            #region Q8
+            var result8 = ProductList.GroupBy(p => p.Category)
+                                    .Where(g => g.Count() > 3)
+                                    .Select(g => new
+                                    {
+                                        Category = g.Key,
+                                        Count = g.Count()
+                                    });
+            #endregion
+
 
 
         }
