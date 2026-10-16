@@ -78,6 +78,10 @@
             var cheapest = ProductList.Min(p => p.UnitPrice);
             #endregion
 
+            #region Q12
+            var result12 = ProductList.Select(p => p.Category).Distinct();
+            #endregion
+
 
 
 
