@@ -117,6 +117,11 @@
             var result19 = Enumerable.Range(1, 30).Where(i => i % 2 == 0);
             #endregion
 
+            #region Q20
+            var result20 = ProductList.Take(3).Select(p => p.ProductName)
+                                      .Concat(CustomerList.Take(3).Select(c => c.CustomerName));
+            #endregion
+
 
 
 
