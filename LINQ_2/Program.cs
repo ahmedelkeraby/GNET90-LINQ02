@@ -113,6 +113,9 @@
             var result18 = Enumerable.Range(1, 10).Select(i => $"7 x {i} = {7 * i}");
             #endregion
 
+            #region Q19
+            var result19 = Enumerable.Range(1, 30).Where(i => i % 2 == 0);
+            #endregion
 
 
 
