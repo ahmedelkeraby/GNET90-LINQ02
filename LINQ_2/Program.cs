@@ -101,6 +101,10 @@
             Console.WriteLine($"Product with ID 18: {productDictionary[18].ProductName}");
             #endregion
 
+            #region Q16
+            var result16 = ProductList.First(p => p.UnitPrice > 50);
+            #endregion
+
 
 
 
